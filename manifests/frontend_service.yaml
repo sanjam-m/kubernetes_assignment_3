@@ -5,3 +5,11 @@ metadata:
   labels:
     app.kubernetes.io/name: guestbook
     app.kubernetes.io/component: frontend
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app.kubernetes.io/name: guestbook
+    app.kubernetes.io/component: frontend
