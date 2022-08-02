@@ -4,3 +4,6 @@ metadata:
   name: simple-webapp-color-env-from-configmap
   labels:
     app: simple-webapp-color
+spec:
+  containers:
+  - image: mmumshad/simple-webapp-color    
