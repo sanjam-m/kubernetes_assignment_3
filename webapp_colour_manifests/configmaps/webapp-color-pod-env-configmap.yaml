@@ -6,4 +6,11 @@ metadata:
     app: simple-webapp-color
 spec:
   containers:
-  - image: mmumshad/simple-webapp-color    
+  - image: mmumshad/simple-webapp-color
+  name: simple-webapp-color
+    env:
+    - name: APP_COLOR
+      valueFrom: 
+        configMapKeyRef:
+          name: color-config
+          key: app-color
