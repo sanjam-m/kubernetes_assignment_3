@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - image: mmumshad/simple-webapp-color
-  name: simple-webapp-color
+    name: simple-webapp-color
     env:
     - name: APP_COLOR
       valueFrom: 
